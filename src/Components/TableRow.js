@@ -1,17 +1,12 @@
-import React from 'react';
-import Table from './Table';
+import React from "react";
+import Table from "./Table";
 
-
-
-const TableRow =(props)=>(
-
-    
-
-<tr onClick={() => props.clicked(props.speakers)}>
+const TableRow = props => (
+  <tr onClick={() => props.clicked(props.speakers)}>
     <td className="text-left">{props.jobName}</td>
     <td>{props.sentiment}</td>
     <td>{props.status}</td>
-    </tr>)
-    
+  </tr>
+);
 
-export default  TableRow;
+export default TableRow;

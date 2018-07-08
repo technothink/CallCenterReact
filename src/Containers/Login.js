@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Login.css";
 import RestConnection from "../Components/Axios/RestConnection";
-import Footer from '../Components/Footer'
+import Footer from "../Components/Footer";
 
 import Input from "../Components/Input";
 
@@ -21,15 +21,14 @@ class LoginPage extends Component {
   };
 
   handlePassword = event => {
-
     this.setState({ password: event.target.value });
   };
 
-  handleOnEntered=(event)=>{
-    if(event.key==='Enter'){
-    this.handleSubmit();
+  handleOnEntered = event => {
+    if (event.key === "Enter") {
+      this.handleSubmit();
     }
-  }
+  };
 
   handleSubmit = () => {
     const userId = this.state.userId;
@@ -66,36 +65,35 @@ class LoginPage extends Component {
     }
 
     return (
-      <div >
-      
-      <div className="DivStyle">
-        <h4>Login to Speech Sense App</h4>
-        
-        <Input
-          label="User Id:"
-          Changed={this.handleUserId}
-          value={this.state.userId}
-          type='text'
-        />
-        <Input
-          label="Password:"
-          Changed={this.handlePassword}
-          value={this.state.password}
-          entered={this.handleOnEntered}
-          type='password'
-        />
+      <div>
+        <div className="DivStyle">
+          <h4>Login to Speech Sense App</h4>
 
-        <button className="ButtonStyle" 
-         onClick={this.handleSubmit.bind(this)}>
-          Login!
-        </button>
+          <Input
+            label="User Id:"
+            Changed={this.handleUserId}
+            value={this.state.userId}
+            type="text"
+          />
+          <Input
+            label="Password:"
+            Changed={this.handlePassword}
+            value={this.state.password}
+            entered={this.handleOnEntered}
+            type="password"
+          />
 
-        {showMessage}
+          <button
+            className="ButtonStyle"
+            onClick={this.handleSubmit.bind(this)}
+          >
+            Login!
+          </button>
 
-     </div>
+          {showMessage}
+        </div>
 
-     <Footer/>
-
+        <Footer />
       </div>
     );
   }
