@@ -66,7 +66,7 @@
   border-radius: 2px;
   overflow: hidden; }
   .mdc-card__primary {
-    padding: 16px; }
+    padding: 5px; }
     .mdc-card__primary .mdc-card__title--large {
       padding-top: 8px; }
     .mdc-card__primary:last-child {
@@ -12489,11 +12489,7 @@ address p {
 .font-weight-bold {
   font-weight: bold !important; }
 
-.text-left {
-  text-align: left !important; }
 
-.text-right {
-  text-align: right !important; }
 
 .text-small {
   font-size: 0.875rem; }

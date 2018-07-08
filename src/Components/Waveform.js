@@ -29,7 +29,7 @@ export default class Waveform extends React.Component {
 
     const style = {
      
-      margin: '10px',
+      margin: '5px',
       
     
   }

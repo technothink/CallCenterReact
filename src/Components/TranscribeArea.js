@@ -4,7 +4,9 @@ import SpeakerLabels from './SpeakerLabels';
 
 
 const style={
-    overflow:'scroll'
+    overflow:'scroll',
+    overflowX: 'hidden'
+
 }
 
 const TranscribeArea = (props) => {

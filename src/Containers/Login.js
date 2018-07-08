@@ -66,8 +66,9 @@ class LoginPage extends Component {
     }
 
     return (
-      <div className="DivStyle">
+      <div >
       
+      <div className="DivStyle">
         <h4>Login to Speech Sense App</h4>
         
         <Input
@@ -91,7 +92,9 @@ class LoginPage extends Component {
 
         {showMessage}
 
-     
+     </div>
+
+     <Footer/>
 
       </div>
     );

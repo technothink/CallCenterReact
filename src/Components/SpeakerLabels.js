@@ -4,7 +4,7 @@ const style={
     
     padding:'10px',
     border:'1px solid lightGrey',
-   
+   fontSize:'13px',
    
     margin:'10px',
     borderRadius:'5px',

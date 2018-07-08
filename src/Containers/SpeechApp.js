@@ -44,15 +44,15 @@ class SpeechApp extends React.Component{
         const style = {
             display: 'flex',
             margin: '5px',
-            height: '400px',
+            height: '420px',
             
 
         }
         
         return(
            
-            
-    <div className="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+    
+    <div >
         <div className="mdc-card">
             <section className="mdc-card__primary">
                 <h1 className="mdc-card__title mdc-card__title--large">Transcribes</h1>
