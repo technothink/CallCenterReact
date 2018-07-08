@@ -3,6 +3,7 @@ import React from 'react';
 const footerStyle ={
     position: 'fixed',
     left: '0',
+    right:'0',
     bottom: '0',
     width: '100%',
     padding:'5px',
